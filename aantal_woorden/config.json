@@ -1,19 +1,32 @@
-{
-  "description": {
-    "names": {
-      "en": "Count words",
-      "nl": "Woorden tellen"
-    }
-  },
-  "evaluation": {
-    "handler": "tested",
-    "test_suite": "suite.yaml"
-  },
-  "programming_language": "python",
-  "access": "public",
-  "internals": {
-    "token": "A2ghHpB8vuPKPSDFQGFK_g3_rI7FASyjq_w5tZ5bxtImze2-6WQy8F3NTMcNTdaQ",
-    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
-  },
-  "labels": []
-}
+[
+  {
+    "tab": "aantal_woorden",
+    "contexts": [
+      {
+        "name": "standaard",
+        "cases": [
+          {
+            "description": "Eén woord",
+            "stdin": "Hallo",
+            "stdout": "1\n"
+          },
+          {
+            "description": "Twee woorden",
+            "stdin": "Hallo wereld",
+            "stdout": "2\n"
+          },
+          {
+            "description": "Meerdere woorden met spaties",
+            "stdin": "Dit is een testzin",
+            "stdout": "4\n"
+          },
+          {
+            "description": "Voorbeeld met meerdere spaties",
+            "stdin": " Dit is onregelmatig ",
+            "stdout": "3\n"
+          }
+        ]
+      }
+    ]
+  }
+]
