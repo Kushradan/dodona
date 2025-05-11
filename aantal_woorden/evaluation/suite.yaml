@@ -1,11 +1,17 @@
-[
-  {
-    "unit": {
-      "tab": "aantal_woorden",
+{
+  "units": {
+    "aantal_woorden": {
       "scripts": {
         "main": "aantal_woorden.php"
+      }
+    }
+  },
+  "tabs": {
+    "aantal_woorden": {
+      "contexts": {
+        "default": {}
       },
-      "testcases": [
+      "cases": [
         {
           "description": "Eén woord",
           "stdin": "Hallo",
@@ -29,4 +35,4 @@
       ]
     }
   }
-]
+}
