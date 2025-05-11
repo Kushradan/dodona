@@ -1,17 +1,21 @@
 {
-    "name": "Python Oefeningen",
-    "language": "python",
-    "version": "3.8",
-    "tests": [
-        {
-            "name": "Test Aantal Woorden",
-            "input": "Dit is een test\n",
-            "output": "Aantal woorden: 4\n"
-        },
-        {
-            "name": "Test Som Even Getallen",
-            "input": "",
-            "output": "Som van even getallen: 18\n"
-        }
-    ]
+  "name": "Python Oefeningen",
+  "language": "python",
+  "version": "3.8",
+  "tests": [
+    {
+      "name": "Test Aantal Woorden",
+      "input": "Dit is een test\n",
+      "output": "Aantal woorden: 4\n"
+    },
+    {
+      "name": "Test Som Even Getallen",
+      "input": "",
+      "output": "Som van even getallen: 18\n"
+    }
+  ],
+  "internals": {
+    "token": "PpMitEpzzv9raNn8uBvSBKG3Ic7VdEeN9VF2qwBApk39z-g8mdNGw8Fq6vuBTFuk",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  }
 }
