@@ -1,0 +1,14 @@
+{
+  "description": {
+    "names": {
+      "en": "Count words",
+      "nl": "Woorden tellen"
+    }
+  },
+  "evaluation": {
+    "handler": "tested",
+    "test_suite": "suite.yaml"
+  },
+  "programming_language": "python",
+  "access": "public"
+}
