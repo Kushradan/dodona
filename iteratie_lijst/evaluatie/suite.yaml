@@ -1,0 +1,14 @@
+- tab: "iteratie_lijst"
+  testcases:
+    - description: Lege lijst
+      input: "\n"
+      output: "0\n"
+    - description: Enkele getallen
+      input: "1 2 3 4 5"
+      output: "15\n"
+    - description: Negatieve getallen
+      input: "-2 -1 0 1 2"
+      output: "0\n"
+    - description: Grote getallen
+      input: "100 200 300"
+      output: "600\n"
