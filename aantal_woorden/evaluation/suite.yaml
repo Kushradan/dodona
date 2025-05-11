@@ -1,14 +1,17 @@
-- tab: "aantal_woorden"
-  testcases:
-    - description: Eén woord
-      input: "Hallo"
-      output: "1\n"
-    - description: Twee woorden
-      input: "Hallo wereld"
-      output: "2\n"
-    - description: Meerdere woorden met spaties
-      input: "Dit is een testzin"
-      output: "4\n"
-    - description: Voorbeeld met meerdere spaties
-      input: "  Dit   is    onregelmatig   "
-      output: "3\n"
+tabs:
+  - name: aantal_woorden
+    contexts:
+      - name: standaard
+        cases:
+          - description: Eén woord
+            stdin: "Hallo"
+            stdout: "1\n"
+          - description: Twee woorden
+            stdin: "Hallo wereld"
+            stdout: "2\n"
+          - description: Meerdere woorden met spaties
+            stdin: "Dit is een testzin"
+            stdout: "4\n"
+          - description: Voorbeeld met meerdere spaties
+            stdin: " Dit is onregelmatig "
+            stdout: "3\n"
