@@ -1,0 +1,14 @@
+{
+  "type": "io",
+  "name": "Tel de klinkers",
+  "programming_language": "python",
+  "exercise_type": "function",
+  "function": {
+    "name": "tel_klinkers",
+    "parameters": ["zin"]
+  },
+  "judge": {
+    "type": "text"
+  },
+  "input_method": "arguments"
+}
