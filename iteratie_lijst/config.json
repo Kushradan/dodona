@@ -7,7 +7,7 @@
   },
   "evaluation": {
     "handler": "tested",
-    "test_suite": "evaluatie/suite.yaml"
+    "test_suite": "suite.yaml"
   },
   "programming_language": "python",
   "access": "public",
