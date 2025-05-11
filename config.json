@@ -1,14 +1,17 @@
 {
-  "type": "io",
-  "name": "Tel de klinkers",
-  "programming_language": "python",
-  "exercise_type": "function",
-  "function": {
-    "name": "tel_klinkers",
-    "parameters": ["zin"]
-  },
-  "judge": {
-    "type": "text"
-  },
-  "input_method": "arguments"
+    "name": "Python Oefeningen",
+    "language": "python",
+    "version": "3.8",
+    "tests": [
+        {
+            "name": "Test Aantal Woorden",
+            "input": "Dit is een test\n",
+            "output": "Aantal woorden: 4\n"
+        },
+        {
+            "name": "Test Som Even Getallen",
+            "input": "",
+            "output": "Som van even getallen: 18\n"
+        }
+    ]
 }
