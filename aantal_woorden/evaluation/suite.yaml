@@ -1,32 +1,30 @@
-[
-  {
+{
+  "unit": {
     "tab": "aantal_woorden",
-    "contexts": [
+    "scripts": {
+      "main": "aantal_woorden.php"
+    },
+    "testcases": [
       {
-        "name": "standaard",
-        "cases": [
-          {
-            "description": "Eén woord",
-            "stdin": "Hallo",
-            "stdout": "1\n"
-          },
-          {
-            "description": "Twee woorden",
-            "stdin": "Hallo wereld",
-            "stdout": "2\n"
-          },
-          {
-            "description": "Meerdere woorden met spaties",
-            "stdin": "Dit is een testzin",
-            "stdout": "4\n"
-          },
-          {
-            "description": "Voorbeeld met meerdere spaties",
-            "stdin": " Dit is onregelmatig ",
-            "stdout": "3\n"
-          }
-        ]
+        "description": "Eén woord",
+        "stdin": "Hallo",
+        "stdout": "1\n"
+      },
+      {
+        "description": "Twee woorden",
+        "stdin": "Hallo wereld",
+        "stdout": "2\n"
+      },
+      {
+        "description": "Meerdere woorden",
+        "stdin": "Dit is een testzin",
+        "stdout": "4\n"
+      },
+      {
+        "description": "Voorbeeld met extra spaties",
+        "stdin": " Dit   is   onregelmatig ",
+        "stdout": "3\n"
       }
     ]
   }
-]
+}
