@@ -1,6 +1,6 @@
 # Som van even getallen
 
-Gegeven een lijst met gehele getallen, tel alle **even** getallen in de lijst op.
+Vraag de gebruiker 5 getallen in te voeren. Plaats deze getallen in een lijst. Tel alle **even** getallen in de lijst op.
 
 Voorbeeld:
 

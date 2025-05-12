@@ -1,14 +1,11 @@
-- tab: "iteratie_lijst"
+- tab: "Feetback"
   testcases:
-    - description: Lege lijst
-      input: "\n"
-      output: "0\n"
     - description: Enkele getallen
-      input: "1 2 3 4 5"
-      output: "15\n"
+      stdin: "1\n2\n3\n4\n5"
+      stdout: "6"
     - description: Negatieve getallen
-      input: "-2 -1 0 1 2"
-      output: "0\n"
+      stdin: "-2\n-1\n0\n1\n2"
+      stdout: "0"
     - description: Grote getallen
-      input: "100 200 300"
-      output: "600\n"
+      stdin: "100\n200\n300\n101\n551"
+      stdout: "600"
