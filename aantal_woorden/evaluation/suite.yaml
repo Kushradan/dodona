@@ -1,10 +1,8 @@
 - tab: "Feedback"
   testcases:
     - stdin: "Hallo daar, generaal Kenobi"
-      stdout: "4"
+      stdout: "Aantal woorden: 4"
     - stdin: "De kat krabt de krollen van de trap."
-      stdout: "8"
-    - stdin: "De kat krabt de krollen van de trap."
-      stdout: "8"
+      stdout: "Aantal woorden: 8"
     - stdin: "Hallo wereld!"
-      stdout: "2" 
+      stdout: "Aantal woorden: 2" 
