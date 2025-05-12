@@ -1,4 +1,4 @@
-- tab: Feedback 2
+- tab: "Feedback 2"
   testcases:
     - stdin: "Hallo daar"
-      stdout: 52
+      stdout: 2
