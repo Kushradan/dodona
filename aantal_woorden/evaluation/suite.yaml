@@ -1,4 +1,10 @@
 - tab: "Feedback 2"
   testcases:
-    - stdin: "Hallo daar"
-      stdout: 2
+    - stdin: "Hallo daar, generaal Kenobi"
+      stdout: "4"
+    - stdin: "De kat krabt de krollen van de trap."
+      stdout: "8"
+    - stdin: "De kat krabt de krollen van de trap."
+      stdout: "8"
+    - stdin: "Hallo wereld!"
+      stdout: "2" 
