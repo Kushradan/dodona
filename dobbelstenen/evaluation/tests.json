@@ -4,122 +4,102 @@
       "name": "Feedback",
       "contexts": [
         {
-          "before": {
-            "python": {
-              "data": "import random; random.seed(12345)"
-            }
-          },
+          "before": { "python": { "data": "import random; random.seed(12345)" } },
           "testcases": [
             {
               "description": "Uitvoeren met seed 12345, 3 dobbelstenen, 2 beurten:",
-              "input": {
-                "stdin": {
-                  "type": "text",
-                  "data": "3\n2\n"
-                }
-              },
-              "output": {
-                "stdout": {
-                  "type": "text",
-                  "data": "Beurt 1: [1, 3, 1] → Som = 5 (oneven)\nBeurt 2: [4, 4, 3] → Som = 11 (oneven)\n"
-                }
-              }
+              "input": { "stdin": { "type": "text", "data": "3\n2\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [4, 6, 1] → Som = 11 (oneven)\nBeurt 2: [3, 3, 2] → Som = 8 (even)\n" } }
             }
           ]
         },
         {
-          "before": {
-            "python": {
-              "data": "import random; random.seed(54321)"
-            }
-          },
+          "before": { "python": { "data": "import random; random.seed(54321)" } },
           "testcases": [
             {
               "description": "Uitvoeren met seed 54321, 2 dobbelstenen, 3 beurten:",
-              "input": {
-                "stdin": {
-                  "type": "text",
-                  "data": "2\n3\n"
-                }
-              },
-              "output": {
-                "stdout": {
-                  "type": "text",
-                  "data": "Beurt 1: [6, 1] → Som = 7 (oneven)\nBeurt 2: [2, 3] → Som = 5 (oneven)\nBeurt 3: [4, 1] → Som = 5 (oneven)\n"
-                }
-              }
+              "input": { "stdin": { "type": "text", "data": "2\n3\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [4, 1] → Som = 5 (oneven)\nBeurt 2: [2, 2] → Som = 4 (even)\nBeurt 3: [5, 5] → Som = 10 (even)\n" } }
             }
           ]
         },
         {
-          "before": {
-            "python": {
-              "data": "import random; random.seed(11111)"
-            }
-          },
+          "before": { "python": { "data": "import random; random.seed(11111)" } },
           "testcases": [
             {
               "description": "Uitvoeren met seed 11111, 1 dobbelsteen, 5 beurten:",
-              "input": {
-                "stdin": {
-                  "type": "text",
-                  "data": "1\n5\n"
-                }
-              },
-              "output": {
-                "stdout": {
-                  "type": "text",
-                  "data": "Beurt 1: [3] → Som = 3 (oneven)\nBeurt 2: [3] → Som = 3 (oneven)\nBeurt 3: [2] → Som = 2 (even)\nBeurt 4: [5] → Som = 5 (oneven)\nBeurt 5: [1] → Som = 1 (oneven)\n"
-                }
-              }
+              "input": { "stdin": { "type": "text", "data": "1\n5\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [3] → Som = 3 (oneven)\nBeurt 2: [1] → Som = 1 (oneven)\nBeurt 3: [3] → Som = 3 (oneven)\nBeurt 4: [3] → Som = 3 (oneven)\nBeurt 5: [6] → Som = 6 (even)\n" } }
             }
           ]
         },
         {
-          "before": {
-            "python": {
-              "data": "import random; random.seed(22222)"
-            }
-          },
+          "before": { "python": { "data": "import random; random.seed(22222)" } },
           "testcases": [
             {
               "description": "Uitvoeren met seed 22222, 4 dobbelstenen, 2 beurten:",
-              "input": {
-                "stdin": {
-                  "type": "text",
-                  "data": "4\n2\n"
-                }
-              },
-              "output": {
-                "stdout": {
-                  "type": "text",
-                  "data": "Beurt 1: [2, 2, 5, 1] → Som = 10 (even)\nBeurt 2: [2, 3, 4, 4] → Som = 13 (oneven)\n"
-                }
-              }
+              "input": { "stdin": { "type": "text", "data": "4\n2\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [3, 6, 3, 4] → Som = 16 (even)\nBeurt 2: [5, 4, 2, 5] → Som = 16 (even)\n" } }
             }
           ]
         },
         {
-          "before": {
-            "python": {
-              "data": "import random; random.seed(33333)"
-            }
-          },
+          "before": { "python": { "data": "import random; random.seed(33333)" } },
           "testcases": [
             {
               "description": "Uitvoeren met seed 33333, 5 dobbelstenen, 1 beurt:",
-              "input": {
-                "stdin": {
-                  "type": "text",
-                  "data": "5\n1\n"
-                }
-              },
-              "output": {
-                "stdout": {
-                  "type": "text",
-                  "data": "Beurt 1: [2, 1, 6, 2, 5] → Som = 16 (even)\n"
-                }
-              }
+              "input": { "stdin": { "type": "text", "data": "5\n1\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [2, 4, 4, 4, 2] → Som = 16 (even)\n" } }
+            }
+          ]
+        },
+        {
+          "before": { "python": { "data": "import random; random.seed(13579)" } },
+          "testcases": [
+            {
+              "description": "Uitvoeren met seed 13579, 3 dobbelstenen, 3 beurten:",
+              "input": { "stdin": { "type": "text", "data": "3\n3\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [3, 1, 2] → Som = 6 (even)\nBeurt 2: [6, 6, 1] → Som = 13 (oneven)\nBeurt 3: [4, 3, 5] → Som = 12 (even)\n" } }
+            }
+          ]
+        },
+        {
+          "before": { "python": { "data": "import random; random.seed(24680)" } },
+          "testcases": [
+            {
+              "description": "Uitvoeren met seed 24680, 6 dobbelstenen, 2 beurten:",
+              "input": { "stdin": { "type": "text", "data": "6\n2\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [6, 4, 6, 5, 3, 1] → Som = 25 (oneven)\nBeurt 2: [2, 4, 1, 3, 6, 3] → Som = 19 (oneven)\n" } }
+            }
+          ]
+        },
+        {
+          "before": { "python": { "data": "import random; random.seed(42424)" } },
+          "testcases": [
+            {
+              "description": "Uitvoeren met seed 42424, 2 dobbelstenen, 4 beurten:",
+              "input": { "stdin": { "type": "text", "data": "2\n4\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [3, 1] → Som = 4 (even)\nBeurt 2: [1, 3] → Som = 4 (even)\nBeurt 3: [5, 5] → Som = 10 (even)\nBeurt 4: [2, 5] → Som = 7 (oneven)\n" } }
+            }
+          ]
+        },
+        {
+          "before": { "python": { "data": "import random; random.seed(98765)" } },
+          "testcases": [
+            {
+              "description": "Uitvoeren met seed 98765, 5 dobbelstenen, 2 beurten:",
+              "input": { "stdin": { "type": "text", "data": "5\n2\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [2, 5, 5, 6, 1] → Som = 19 (oneven)\nBeurt 2: [6, 4, 4, 3, 4] → Som = 21 (oneven)\n" } }
+            }
+          ]
+        },
+        {
+          "before": { "python": { "data": "import random; random.seed(10101)" } },
+          "testcases": [
+            {
+              "description": "Uitvoeren met seed 10101, 4 dobbelstenen, 3 beurten:",
+              "input": { "stdin": { "type": "text", "data": "4\n3\n" } },
+              "output": { "stdout": { "type": "text", "data": "Beurt 1: [6, 2, 5, 3] → Som = 16 (even)\nBeurt 2: [6, 3, 4, 3] → Som = 16 (even)\nBeurt 3: [2, 5, 5, 2] → Som = 14 (even)\n" } }
             }
           ]
         }
