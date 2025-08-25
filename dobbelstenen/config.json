@@ -1,0 +1,18 @@
+{
+  "description": {
+    "names": {
+      "nl": "Dobbelstenen gooien"
+    }
+  },
+  "evaluation": {
+    "handler": "tested",
+    "test_suite": "suite.yaml"
+  },
+  "programming_language": "python",
+  "access": "public",
+  "internals": {
+    "token": "ZgrEXUD5hDuCG2Rtu7JpnFVNG7rtDpYFnpTXM6H5v29Ur34i3q6A8hVhEFydkA6B",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  },
+  "labels": []
+}
