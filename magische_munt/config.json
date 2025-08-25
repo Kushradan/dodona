@@ -1,0 +1,18 @@
+{
+  "description": {
+    "names": {
+      "nl": "De magische munt"
+    }
+  },
+  "evaluation": {
+    "handler": "tested",
+    "test_suite": "tests.json"
+  },
+  "programming_language": "python",
+  "access": "public",
+  "internals": {
+    "token": "AegHmMPs6JHZE2ZpsuDSWjqrMshz8_iyZvjr6qvYRGWQJkHYfvTGngabkiYIKZu6",
+    "_info": "These fields are used for internal bookkeeping in Dodona, please do not change them."
+  },
+  "labels": []
+}
