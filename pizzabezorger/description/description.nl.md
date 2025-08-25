@@ -17,10 +17,12 @@ Voorbeeld:
 ```
 Mario rijdt 10 km aan 30 km/u.
 Luigi rijdt 12 km aan 36 km/u.
+```
 
 Uitvoer:
+```
 “Luigi is de snelste bezorger. Hij doet er 20.0 minuten over.”
 ```
 
-Tip
+# Tip
 Tijd = afstand / snelheid. Vergeet niet om uur → minuten om te zetten.
