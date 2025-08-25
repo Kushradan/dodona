@@ -1,40 +1,58 @@
+import os
+import math
 import random
 import json
 
-# testcases die we willen genereren: (seed, aantal_dobbelstenen, aantal_beurten)
-cases = [
-    (12345, 3, 2),
-    (54321, 2, 3),
-    (11111, 1, 5),
-    (22222, 4, 2),
-    (33333, 5, 1)
-]
+# fixed seed for reproducible test generation
+random.seed(123456789)
+
+evaldir = os.path.join("..", "evaluation")
+if not os.path.exists(evaldir):
+    os.makedirs(evaldir)
+
+solutiondir = os.path.join("..", "solution")
+if not os.path.exists(solutiondir):
+    os.makedirs(solutiondir)
+
+def write_json(data: dict):
+    with open(os.path.join("..", "evaluation", "tests.json"), "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+# Generate seed & n pairs
+cases = []
+for i in range(3, 15):
+    exp = math.ceil(i / 2)
+    seed = random.randint(1, 100000)
+    n = 10 ** exp
+    cases.append((seed, n))
 
 exportdata = {"tabs": [{"name": "Feedback", "contexts": []}]}
 
-for seed, n_dobbelstenen, n_beurten in cases:
-    random.seed(seed)
-    stdout_lines = []
-    for beurt in range(1, n_beurten + 1):
-        worpen = [random.randint(1,6) for _ in range(n_dobbelstenen)]
-        som = sum(worpen)
-        pariteit = "even" if som % 2 == 0 else "oneven"
-        stdout_lines.append(f"Beurt {beurt}: {worpen} → Som = {som} ({pariteit})")
-    outputtxt = "\n".join(stdout_lines) + "\n"
-    
+for seed, n in cases:
+    # prepare context dictionary directly
     context = {
-        "before": {"python": {"data": f"import random; random.seed({seed})"}},
-        "testcases": [
-            {
-                "description": f"Uitvoeren met seed {seed}, {n_dobbelstenen} dobbelstenen, {n_beurten} beurten:",
-                "input": {
-                    "stdin": {"type": "text", "data": f"{n_dobbelstenen}\n{n_beurten}\n"}
-                },
-                "output": {"stdout": {"type": "text", "data": outputtxt}}
-            }
-        ]
+        "before": {"python": {"data": f"import random; random.seed({seed})"}} ,
+        "testcases": []
     }
-    exportdata["tabs"][0]["contexts"].append(context)
 
-with open("tests.json", "w", encoding="utf-8") as f:
-    json.dump(exportdata, f, indent=2)
+    # calculate expected output
+    random.seed(seed)
+    aantal = 0
+    for _ in range(n):
+        dice = [random.randint(1,6) for _ in range(5)]
+        m, M = min(dice), max(dice)
+        if (m == 1 and M == 5) or (m == 2 and M == 6):
+            if len(set(dice)) == 5:  # geen dubbele
+                aantal += 1
+
+    kans = round(aantal / n * 100, 2)
+    outputtxt = f"De kans op grote straat is ongeveer {kans} %\n"
+
+    # create testcase
+    testcase = {
+        "description": f"Uitvoeren met seed {seed} en invoer {n} leidt tot:",
+        "input": {"stdin": {"type": "text", "data": str(n)}},
+        "output": {"stdout": {"type": "text", "data": outputtxt}}
+    }
+
+    context["te]()
